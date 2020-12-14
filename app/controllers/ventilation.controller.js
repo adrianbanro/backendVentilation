@@ -1,5 +1,6 @@
 const db = require("../models");
 const Climate = db.climate;
+//const Spot = db.spot;
 const Op = db.Sequelize.Op;
 
 // Create and Save a new Tutorial

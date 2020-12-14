@@ -12,4 +12,10 @@ db.sequelize = sequelize;
 
 db.climate = require("./ventilation.model.js")(sequelize, Sequelize);
 
+//db.spot = require("./spot.model.js")(sequelize, Sequelize);
+
+db.spot = require("./spot.model.js")(sequelize, Sequelize);
+
+db.booking = require("./booking.model.js")(sequelize, Sequelize);
+
 module.exports = db;

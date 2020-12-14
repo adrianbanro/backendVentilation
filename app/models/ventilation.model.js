@@ -11,6 +11,19 @@ module.exports = (sequelize, Sequelize) => {
       }
     });
 
+    const Spot = sequelize.define("spot", {
+      spot: {
+        type: Sequelize.INTEGER
+      },
+      roomName: {
+        type: Sequelize.STRING
+      },
+      building: {
+        type: Sequelize.STRING
+      }
+    });
+
+
     return Tutorial;
   };
 
